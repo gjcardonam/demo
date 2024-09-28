@@ -35,7 +35,7 @@ public class UserService {
             userRepository.deleteById(id);
         } catch (Exception e) {
             System.out.println("Error al eliminar el usuario: " + e.getMessage());
-        };
+        }
     }
 
     public UserModel updateUser(UserModel user) {
