@@ -41,8 +41,4 @@ public class UserService {
     public UserModel updateUser(UserModel user) {
         return userRepository.save(user);
     }
-
-    public Optional<UserModel> getUserByEmail(String email) {
-        return userRepository.findByEmail(email);
-    }
 }
